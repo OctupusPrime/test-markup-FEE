@@ -1,0 +1,141 @@
+body, button, a, input, textarea {
+    font-size: 1.125rem;
+}
+
+input, textarea {
+    padding: 1em 1.6em;
+}
+
+.orange-r-btn {
+    padding: 1.2em 2em;
+}
+/* ====================
+    Typography
+==================== */
+
+.logo {
+    position: absolute;
+    font-weight: 600;
+    left: 5%;
+}
+
+nav ul {
+    display: inline-block;
+}
+nav li {
+    display: inline-block;
+    border: 0 !important;
+}
+nav li + li {
+    margin-left: 2.75em;
+}
+.contact-us {
+    padding: 1.1em 1.8em;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0px 7px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+section h1 {
+    font-size: 4.5rem;
+    margin-top: 0;
+    margin-bottom: .6em;
+}
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+section .subtitle {
+    margin-bottom: 1.2em;
+}
+
+.section-btns-row {
+    flex-direction: row;
+    gap: 40px;
+}
+
+.contact-form textarea {
+    margin-bottom: 3.6em;
+}
+
+.footer-logo {
+    margin-bottom: 1.4em;
+}
+footer h2 {
+    font-size: 3rem;
+    margin-bottom: .5em;
+}
+footer nav {
+    margin-bottom: 50px;
+}
+footer .license {
+    margin-bottom: 2.8em;
+}
+footer .links-row {
+    display: inline-block;
+}
+footer .link-item + .link-item {
+    margin-left: 5em;
+}
+footer .link-item a{
+    font-size: 2rem;
+}
+
+/* ====================
+    Layout
+==================== */
+
+.header-mobile {
+    display: none;
+}
+.header-desctop {
+    display: block;
+    position: sticky;
+    top: -40px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 50px 0 10px 0;
+    background: var(--white);
+}
+.button-row * + * {
+    margin-left: 2.25em;
+}
+
+main { 
+    overflow: hidden;
+}
+.main-info-section {
+    gap: 10%;
+    min-height: calc(100vh - 100px);
+}
+.section-slider {
+    display: block;
+}
+.section-text {
+    min-width: 50%;
+}
+
+.works-section {
+    padding: 80px 0 25px 0;
+}
+.works-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 280px;
+    gap: 30px;
+    margin-top: 75px;
+    margin-bottom: 45px;
+}
+
+.contact-us-section {
+    padding: 70px 0 50px 0;
+}
+.input-row {
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+footer {
+    padding: 70px 0 50px 0;
+}

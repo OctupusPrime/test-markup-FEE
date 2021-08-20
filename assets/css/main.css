@@ -1,0 +1,238 @@
+body { 
+    --dark-blue: #314584;
+    --light-blue: #c3d0d8;
+    --extra-ligth-blue: #f4fafe;
+    --ligth-orange: #ff3946;
+    --white: #fff;
+    --light-gray: #6e757a; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, button, a, input, textarea {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.25rem;
+    color: var(--dark-blue);
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}          
+button {
+    display: inline-block;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: .5em 1em;
+    background: var(--extra-ligth-blue);
+    border: none;
+    outline: none;
+}
+input::placeholder,
+textarea::placeholder {
+    color: var(--dark-blue);
+}
+a, button, input, textarea {
+    font-weight: 600;
+}
+
+.wrapper {
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.right {
+    margin-left: auto;
+}
+
+.orange-txt {
+    color: var(--ligth-orange);
+}
+.orange-r-btn {
+    background: var(--ligth-orange);
+    border-radius: 2em;
+    color: var(--white);
+    padding: .7em 1.4em;
+}
+.upper {
+    text-transform: uppercase;
+}
+.semi-bold {
+    font-weight: 600;
+}
+
+/* ====================
+    Typography
+==================== */
+
+.logo {
+    display: inline-block;
+    position: relative;
+}
+.logo::after {
+    content: '';
+    width: 50%;
+    height: 6px;
+    background: var(--ligth-orange);
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    transform: translate(-50%, 0);
+}
+
+nav {
+    text-align: center; 
+    margin-top: 10px;
+}
+nav ul li {
+    border-bottom: 1px solid currentColor;
+    padding: .5em 0;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    margin-top: 10vh;
+    margin-bottom: .6em;
+}
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+section .subtitle {
+    margin-bottom: 1em;
+}
+section .body {
+    color: var(--light-gray);
+    margin-bottom: 2.5em;
+}
+.section-slider {
+    display: none;
+}
+.works-btn {
+    display: block;
+    text-align: center;
+}
+
+.input-row input{
+    flex-grow: 1;
+}
+.contact-form textarea {
+    resize: none;
+    margin-bottom: 2em;
+}
+.contact-form > button {
+    display: block;
+    margin: 0 auto;
+}
+
+footer, footer a, footer i {
+    color: var(--white);
+}
+.footer-logo {
+    margin-bottom: 1em;
+}
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+footer nav {
+    margin-bottom: 20px;
+}
+footer .license {
+    font-size: .875em;
+    margin-bottom: 1.5em;
+}
+footer .links-row {
+    display: inline-block;
+}
+footer .link-item {
+    display: inline-block;
+}
+footer .link-item + .link-item {
+    margin-left: 1.5em;
+}
+footer .link-item a{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+
+/* ====================
+    Layout
+==================== */
+
+.header-mobile {
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background: var(--white);
+}
+.header-desctop {
+    display: none;
+}
+
+.button-row * + * {
+    margin-left: .5em;
+}
+
+.header-mobile nav {
+    display: none;
+}
+
+.main-info-section {
+    min-height: 100vh;
+}
+
+.section-btns-row {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.works-section {
+    padding: 50px 0 25px 0;
+}
+.works-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.work-item {
+    background: var(--light-blue);
+}
+
+.contact-us-section {
+    padding: 25px 0 50px 0;
+}
+
+.input-row {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    background: var(--dark-blue);
+    padding: 40px 0 30px 0;
+}
