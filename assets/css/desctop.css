@@ -14,11 +14,13 @@ input, textarea {
 ==================== */
 
 .logo {
-    position: absolute;
-    font-weight: 600;
-    left: 5%;
+    position: relative;
 }
 
+nav {
+    margin: 0;
+    margin-left: 2.75em;
+}
 nav ul {
     display: inline-block;
 }
@@ -138,4 +140,14 @@ main {
 
 footer {
     padding: 70px 0 50px 0;
+}
+
+@media (min-width: 1500px) {
+    .logo {
+        position: absolute;
+        left: 5%;
+    }
+    nav {
+        margin: 0;
+    }
 }
