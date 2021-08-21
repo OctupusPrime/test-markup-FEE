@@ -33,9 +33,15 @@ nav li + li {
 }
 .contact-us {
     padding: 1.1em 1.8em;
+    margin-left: 2.25em;
     background: var(--white);
     border-radius: 5px;
     box-shadow: 0px 7px 10px 0px rgba(34, 60, 80, 0.2);
+    transition: background .2s ease-out;
+}
+.contact-us:hover {
+    background: var(--ligth-orange);
+    color: var(--white);
 }
 
 section h1 {
@@ -99,9 +105,6 @@ footer .link-item a{
     z-index: 10;
     padding: 50px 0 10px 0;
     background: var(--white);
-}
-.button-row * + * {
-    margin-left: 2.25em;
 }
 
 .main-info-section {
@@ -201,6 +204,10 @@ footer .link-item a{
 footer {
     padding: 70px 0 50px 0;
 }
+
+/* ====================
+    Media
+==================== */
 
 @media (min-width: 1500px) {
     .logo {

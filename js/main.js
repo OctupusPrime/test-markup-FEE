@@ -115,3 +115,7 @@ window.addEventListener('touchmove', (e) => {
 window.addEventListener('touchend', () => {
     end()
 })
+
+document.getElementById('menu-btn').addEventListener('click', (e) => {
+    document.querySelector('.mobile-nav').classList.toggle('show')
+})

@@ -70,6 +70,10 @@ a, button, input, textarea {
     border-radius: 2em;
     color: var(--white);
     padding: .7em 1.4em;
+    transition: background .2s ease-out;
+}
+.orange-r-btn:hover {
+    background: var(--dark-blue);
 }
 .upper {
     text-transform: uppercase;
@@ -96,6 +100,52 @@ a, button, input, textarea {
     bottom: -3px;
     transform: translate(-50%, 0);
 }
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px 0 20px 12px;
+    user-select: none;
+    font-size: 0;
+    margin-left: 15px;
+}
+.navicon {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: var(--dark-blue);
+}
+.navicon::before, .navicon::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--dark-blue);
+    position: absolute;
+    transition: all .2s ease-out;
+}
+.navicon::before {
+    top: 6px;
+}
+.navicon::after {
+    top: -6px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+.menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
 
 nav {
     text-align: center; 
@@ -107,7 +157,7 @@ nav ul li {
 }
 
 section h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: 10vh;
     margin-bottom: .6em;
 }
@@ -190,13 +240,11 @@ footer .link-item a{
 .header-desctop {
     display: none;
 }
-
-.button-row * + * {
-    margin-left: .5em;
-}
-
 .header-mobile nav {
     display: none;
+}
+.header-mobile .show {
+    display: block;
 }
 
 .main-info-section {
