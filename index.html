@@ -63,7 +63,17 @@
                     </div>
                 </div>
                 <div class="section-slider">
-                    <img src="assets/img/main-image.png" alt="#">
+                    <div class="slider-container">
+                        <div class="slider-row animate">
+                            <div class="slide" style="background: center/100% no-repeat url(assets/img/slider-image-1.png);"></div>
+                            <div class="slide" style="background: center/100% no-repeat url(assets/img/slider-image-2.png);"></div>
+                            <div class="slide" style="background: center/100% no-repeat url(assets/img/slider-image-3.png);"></div>
+                        </div>
+                    </div>
+                    <button class="slider-btn-left"  data-slider-move="left"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn-right" data-slider-move="right"><i class="fas fa-chevron-right"></i></button>
+
+                    <div class="dots-row"></div>
                 </div>
             </section>
             <section class="works-section wrapper">
@@ -113,5 +123,6 @@
             </ul>
         </div>
     </footer>
+    <script defer src="js/main.js"></script>
 </body>
 </html>
